@@ -2,6 +2,8 @@
 const { log } = require("console");
 const { readFile, writeFile } = require("fs");
 
+console.log("start");
+
 // for async to work we need to provide callback - (err, result)
 readFile("./content/first.txt", "utf8", (err, result) => {
   if (err) {
@@ -23,10 +25,17 @@ readFile("./content/first.txt", "utf8", (err, result) => {
           console.log(err);
           return;
         }
-        console.log(result);
+        console.log("done with task");
       }
     );
   });
 });
 
+console.log("starting next task");
+
 //ABOVE IS A CALLBACK HELL - where a Callback is called inside another Callback
+
+// EXECUTES AS FOLLOWS - this will keep on serving
+// start
+// starting next task
+// done with task
