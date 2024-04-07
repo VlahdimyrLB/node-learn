@@ -1,0 +1,20 @@
+{
+  "name": "learn",
+  "version": "1.0.0",
+  "description": "My journey in learning Node.js",
+  "main": "1-intro.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
