@@ -4,7 +4,7 @@ const { readFile, writeFile } = require("fs");
 
 console.log("start");
 
-// for async to work we need to provide callback - (err, result)
+// for async to work we need to provide callback - (err, result) => {}
 readFile("./content/first.txt", "utf8", (err, result) => {
   if (err) {
     console.log(err);
